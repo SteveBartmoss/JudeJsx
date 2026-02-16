@@ -1,0 +1,19 @@
+{
+  "name": "judejsx",
+  "version": "1.0.0",
+  "description": "Libreria ui para react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SteveBartmoss/JudeJsx.git"
+  },
+  "author": "Steve",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SteveBartmoss/JudeJsx/issues"
+  },
+  "homepage": "https://github.com/SteveBartmoss/JudeJsx#readme"
+}
