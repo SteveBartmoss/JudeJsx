@@ -1,4 +1,4 @@
 
-export {default as Btn } from "./btn"
-export {default as Modal} from "./modal"
-export {default as Textfield} from "./textfield"
+export {Modal}  from "./modal"
+export {Btn} from "./btn"
+export {Textfield} from "./textfield"
