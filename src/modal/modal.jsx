@@ -1,16 +1,17 @@
 
-export function Modal({children,show,setShow,persistent=false}){
+export function Modal({ children, show, setShow, persistent = false }) {
 
-    const handleOutSideClick=(e)=>{
-        if(e.target.className == 'overlay'&&persistent === false){
+    const handleOutSideClick = (e) => {
+        if (e.target.className == e.currentTarget && !persistent) {
             setShow(false)
         }
     }
 
-    return(
-        show&&
-        <div className='overlay'>
-            <div className='modal-content' onClick={handleOutSideClick}>
+    if (!show) return null
+
+    return (
+        <div className='overlay' onClick={handleOutSideClick}>
+            <div className='modal-content'>
                 {children}
             </div>
         </div>
