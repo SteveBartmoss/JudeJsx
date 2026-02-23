@@ -4,7 +4,7 @@
   "description": "Libreria ui para react",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsup"
   },
   "repository": {
     "type": "git",
@@ -16,6 +16,10 @@
     "url": "https://github.com/SteveBartmoss/JudeJsx/issues"
   },
   "homepage": "https://github.com/SteveBartmoss/JudeJsx#readme",
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
   "dependencies": {
     "tsup": "^8.5.1",
     "typescript": "^5.9.3"
