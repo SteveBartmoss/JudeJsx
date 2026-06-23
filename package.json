@@ -1,10 +1,13 @@
 {
   "name": "judejsx",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Libreria ui para react",
-  "main": "index.js",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "files": ["dist"],
   "scripts": {
-    "build": "tsup"
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -12,6 +15,7 @@
   },
   "author": "Steve",
   "license": "ISC",
+  "keywords": ["react", "menu", "context-menu"],
   "bugs": {
     "url": "https://github.com/SteveBartmoss/JudeJsx/issues"
   },
