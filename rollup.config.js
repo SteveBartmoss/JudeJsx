@@ -4,7 +4,7 @@ import babel from '@rollup/plugin-babel';
 import postcss from 'rollup-plugin-postcss';
 
 export default {
-  input: 'src/MenuHelper.jsx',        // Tu componente
+  input: 'src/index.js',
   output: [
     {
       file: 'dist/index.cjs.js',
@@ -21,15 +21,15 @@ export default {
   plugins: [
     resolve(),
     commonjs(),
-    babel({ 
+    babel({
       babelHelpers: 'bundled',
       exclude: 'node_modules/**'
     }),
     postcss({
-      extract: 'menuHelper.css',     // Extrae el CSS a un archivo separado
+      extract: 'jude-jsx.css',
       minimize: true,
-      sourceMap: true
+      sourceMap: true,
     })
   ],
-  external: ['react', 'react-dom']   // No incluir React en el bundle
+  external: ['react', 'react-dom']
 };
